@@ -42,7 +42,7 @@ a {
   text-decoration: none;
   cursor: pointer;
   padding-top: 14px;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 nav ul * {
@@ -56,7 +56,7 @@ ul {
 
 nav li {
   cursor: pointer;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 nav li:last-child {
@@ -87,7 +87,7 @@ nav li:hover {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 50px;
 }
 
@@ -140,7 +140,6 @@ input {
 
 form {
   display: flex;
-  direction: row;
   padding: 20px;
 }
 
@@ -161,6 +160,26 @@ footer {
   display: inline;
 }
 
-@media only screen and (max-width: 640px) {
-  flex-direction: column;
+@media only screen and (max-width: 600px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+  }
+
+  #email, #create {
+    width: 95%;
+    justify-content: center;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    padding-top: 0px;
+  }
+
 }
